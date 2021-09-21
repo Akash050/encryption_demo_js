@@ -42,6 +42,11 @@ function decrypt(text){
  encrypt('test')
  decrypt('8ccbe92d')
 
+ app.get('/test', (req, res) => {
+    res.send("test gtest")
+  })
+ 
+
  server.listen(process.env.PORT || 6000, () => {
    console.log(`backend running on port ${port}`)
  });
